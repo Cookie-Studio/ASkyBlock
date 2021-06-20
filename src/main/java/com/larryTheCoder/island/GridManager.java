@@ -27,6 +27,7 @@
 package com.larryTheCoder.island;
 
 import cn.nukkit.Player;
+import cn.nukkit.Server;
 import cn.nukkit.block.Block;
 import cn.nukkit.level.Location;
 import cn.nukkit.level.Position;
@@ -175,6 +176,8 @@ public class GridManager {
             }
 
             //if still can't find safe spawn,except the test of surround
+            Server.getInstance().getPlayer(plName).sendMessage("§cCan't find safe spawn,except the test of surround");
+            Server.getInstance().getPlayer(plName).sendMessage("§cRemember to check that your island atleast has 3x3 blocks able to stand");
             for (int dy = 0; dy <= 128; dy++) {
                 for (int dx = center.getFloorX() - 25; dx <= center.getFloorX() + 25; dx++) {
                     for (int dz = center.getFloorY() - 25; dz <= center.getFloorY() + 25; dz++) {
