@@ -21,7 +21,7 @@ allowUpdate: false
 ##  Available locales are:
 ##    en_US - English by larryTheCoder.
 ##    de_DE - German by UnexMC
-defaultlanguage: "en_US"
+defaultlanguage: "zh_CN"
 
 # Database
 ## You should NEVER change this in during mid-game.
